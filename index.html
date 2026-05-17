@@ -31,6 +31,8 @@
     cursor: none;
   }
 
+  
+
   /* CURSOR PERSONALIZADO */
   .cursor {
     width: 12px; height: 12px;
@@ -732,6 +734,227 @@
     transform: scale(1.1);
     box-shadow: 0 8px 30px rgba(37,211,102,0.5);
   }
+
+  /* ================= MOBILE ================= */
+
+@media (max-width: 900px){
+
+  body{
+    cursor: auto;
+  }
+
+  .cursor,
+  .cursor-ring{
+    display:none;
+  }
+
+  nav{
+    padding:20px;
+    flex-direction:column;
+    gap:20px;
+  }
+
+  .nav-links{
+    gap:20px;
+    flex-wrap:wrap;
+    justify-content:center;
+  }
+
+  .hero{
+    grid-template-columns:1fr;
+    min-height:auto;
+  }
+
+  .hero-content{
+    padding:140px 25px 60px;
+    text-align:center;
+    align-items:center;
+  }
+
+  .hero-title{
+    font-size:48px;
+    line-height:1.1;
+  }
+
+  .hero-desc{
+    max-width:100%;
+  }
+
+  .hero-btns{
+    flex-direction:column;
+    width:100%;
+  }
+
+  .btn-primary,
+  .btn-ghost{
+    width:100%;
+    justify-content:center;
+    text-align:center;
+  }
+
+  .hero-stats{
+    position:relative;
+    bottom:auto;
+    right:auto;
+    justify-content:center;
+    padding:30px 0;
+    flex-wrap:wrap;
+  }
+
+  .divider{
+    margin:0 20px;
+  }
+
+  .sobre{
+    grid-template-columns:1fr;
+    padding:80px 25px;
+    gap:50px;
+  }
+
+  .sobre::before{
+    display:none;
+  }
+
+  .sobre-badge{
+    right:10px;
+    bottom:10px;
+    width:70px;
+    height:70px;
+  }
+
+  .servicos{
+    padding:80px 20px;
+  }
+
+  .servicos-grid{
+    grid-template-columns:1fr;
+  }
+
+  .servico-card{
+    padding:40px 25px;
+  }
+
+  .portfolio{
+    padding:80px 20px;
+  }
+
+  .portfolio-grid{
+    grid-template-columns:1fr;
+    grid-template-rows:auto;
+  }
+
+  .portfolio-item{
+    min-height:260px;
+  }
+
+  .portfolio-item:first-child{
+    grid-row:auto;
+  }
+
+  .depoimentos{
+    padding:80px 20px;
+  }
+
+  .depoimentos-grid{
+    grid-template-columns:1fr;
+  }
+
+  .agendamento{
+    grid-template-columns:1fr;
+    padding:0;
+    gap:50px;
+  }
+
+  #agendamento{
+    padding:80px 20px !important;
+  }
+
+  .form-agendamento{
+    padding:35px 20px;
+  }
+
+  .form-row{
+    grid-template-columns:1fr;
+  }
+
+  .horarios{
+    grid-template-columns:1fr;
+  }
+
+  .localizacao{
+    padding:80px 20px;
+  }
+
+  .localizacao-inner{
+    grid-template-columns:1fr;
+    gap:50px;
+  }
+
+  .map-placeholder{
+    height:250px;
+  }
+
+  .social-strip{
+    padding:80px 20px;
+  }
+
+  .social-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  footer{
+    grid-template-columns:1fr;
+    text-align:center;
+    padding:40px 20px;
+  }
+
+  .footer-social{
+    justify-content:center;
+  }
+
+  img{
+    width:100%;
+    height:auto;
+    display:block;
+  }
+
+  h1,h2,h3{
+    word-break:break-word;
+  }
+
+}
+
+
+/* ================= CELULAR PEQUENO ================= */
+
+@media (max-width: 500px){
+
+  .hero-title{
+    font-size:38px;
+  }
+
+  .section-title{
+    font-size:34px;
+  }
+
+  .logo{
+    font-size:18px;
+    text-align:center;
+  }
+
+  .nav-links a{
+    font-size:10px;
+  }
+
+  .btn-primary{
+    padding:14px 20px;
+  }
+
+  .social-grid{
+    grid-template-columns:1fr;
+  }
+
+}
 </style>
 </head>
 <body>
